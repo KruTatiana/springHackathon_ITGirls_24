@@ -1,0 +1,30 @@
+.quotespage {
+  background-image: url(../../img/jeremy.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-position: center;
+  background-color: #eaede9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quotespage__subtext {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.quotespage__text {
+  font-size: 30px;
+  text-align: center;
+}
+.quotespage__btn {
+  margin-top: 5%;
+  font-size: 24px;
+  padding: 2% 5%;
+  border: none;
+  width: 40%;
+  border-radius: 20px;
+}/*# sourceMappingURL=quotesPege.css.map */
