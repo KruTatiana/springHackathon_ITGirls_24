@@ -7,9 +7,61 @@
     <title>Project</title>
   </head>
   <body>
-    <div class="container py-4 px-3 mx-auto">
-      <h1>Hello, Bootstrap!</h1>
-      <button class="btn btn-primary">Primary button</button>
+    <div class="container">
+      <header class="main-header">
+        <img src="./logo.png" alt="Логотип" width="177" height="101" />
+        <h1>Послушай, узнай кто ты сегодня, вдохновись</h1>
+        <div class="main-header__box">
+          <!-- <img src="./user.svg" alt="Иконка входа" width="20" height="20" > -->
+          <a class="main-header__link" href="">Войти</a>
+        </div>
+      </header>
+      <main>
+        <div class="about">
+          <ul class="about__list">
+            <li class="about__item">
+              <a href="./music.html">
+                <img
+                  src="./music.png"
+                  alt="Девушка с телефоном"
+                  width="800"
+                  height="654"
+                />
+                <p>
+                  Послушай relax-музыку <br />
+                  и расслабься
+                </p>
+              </a>
+            </li>
+            <li class="about__item">
+              <a href="./test.html">
+                <img
+                  src="./music.png"
+                  alt="Девушка с телефоном"
+                  width="800"
+                  height="654"
+                />
+                <p>
+                  Пройди забавный тест <br />
+                  и узнай кто ты сегодня
+                </p>
+              </a>
+            </li>
+            <li class="about__item">
+              <a href="#">
+                <img
+                  src="./music.png"
+                  alt="Девушка с телефоном"
+                  width="800"
+                  height="654"
+                />
+                <p>Вдохновись мыслями и историями</p>
+              </a>
+            </li>
+          </ul>
+          <h2 class="about__desc">Каждый день новые эмоции, для тебя!</h2>
+        </div>
+      </main>
     </div>
     <script src="./assets/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="./main.js"></script>
