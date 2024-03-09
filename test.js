@@ -90,13 +90,22 @@ class Test {
     this.lableA = document.createElement('lable');
     this.lableB = document.createElement('lable');
     this.lableC = document.createElement('lable');
+    this.inputsEl = document.createElement('div');
+    this.variantElOne = document.createElement('div');
+    this.variantElTwo = document.createElement('div');
+    this.variantElThree = document.createElement('div');
     mainEl.appendChild(this.questionEl);
-    mainEl.appendChild(this.inputA);
-    mainEl.appendChild(this.lableA);
-    mainEl.appendChild(this.inputB);
-    mainEl.appendChild(this.lableB);
-    mainEl.appendChild(this.inputC);
-    mainEl.appendChild(this.lableC);
+    mainEl.appendChild(this.inputsEl);
+    this.inputsEl.appendChild(this.variantElOne);
+    this.inputsEl.appendChild(this.variantElTwo);
+    this.inputsEl.appendChild(this.variantElThree);
+    this.variantElOne.appendChild(this.inputA);
+    this.variantElOne.appendChild(this.lableA);
+    this.variantElTwo.appendChild(this.inputB);
+    this.variantElTwo.appendChild(this.lableB);
+    this.variantElThree.appendChild(this.inputC);
+    this.variantElThree.appendChild(this.lableC);
+    this.inputsEl.setAttribute('class','inp_container')
     this.questionEl.setAttribute('class','question_element');
     this.inputA.setAttribute('id','answerFirst');
     this.inputB.setAttribute('id','answerSecond');

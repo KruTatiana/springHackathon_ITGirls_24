@@ -11978,4 +11978,34 @@ textarea.form-control-lg {
 }
 .finish_el {
   display: none;
+}
+
+.finish_el > img {
+  width: 40%;
+}
+
+.go_quest {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.header_test {
+  margin-bottom: 5%;
+  color: blue;
+}
+
+.header_welcome {
+  color: blue;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.inp_container {
+  margin-bottom: 2%;
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=custom.css.map */
