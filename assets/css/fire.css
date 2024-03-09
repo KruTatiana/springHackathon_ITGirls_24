@@ -1,7 +1,3 @@
-body {
-  font-family: sans-serif;
-}
-
 .containerAllMusic {
   display: flex;
   flex-direction: column;

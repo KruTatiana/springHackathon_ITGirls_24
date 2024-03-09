@@ -24,17 +24,14 @@ const quotes = [
 const subtextQuote = document.getElementById('subtextQuote');
 const btn = document.getElementById("blockTextQuote");
 
-// получить случайное целое число
 function randomInt(max) {
     return Math.floor(Math.random() * max);
   }
   
-  // задержка в мс
   async function delay(x) {
     return new Promise(res => setTimeout(res, x));
   }
   
-  // вывести цитату
   async function printq(q) {
     for (let i = 0; i < q.length; i++) {
         subtextQuote.textContent += q[i];
@@ -42,16 +39,14 @@ function randomInt(max) {
     }
   }
   
-  // менять цитаты случайно
   async function type() {
     while (true) {
         subtextQuote.textContent = "";
       let quote = quotes[randomInt(quotes.length)];
       await printq('« ' + quote.quote + '» ' + quote.autor);
-      await delay(1000 + randomInt(2000));// случайная задержка между цитатами
+      await delay(1000 + randomInt(2000));
     }
   }
   
   btn.addEventListener('click', type);
   console.log(btn);
-//   type();

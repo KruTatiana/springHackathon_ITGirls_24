@@ -1,3 +1,7 @@
+body {
+  font-family: sans-serif;
+}
+
 .quotespage {
   background-image: url(../../img/jeremy.jpg);
   background-size: cover;
