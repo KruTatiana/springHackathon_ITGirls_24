@@ -67,11 +67,11 @@ let quest = {
 },]
 }
 
-const buttonGo = document.querySelector('.go_quest');
-const mainEl = document.querySelector('.my_element');
-const buttonNext = document.querySelector('.next');
-const questName = document.querySelector('.quest_name');
-const finEl = document.querySelector('.finish_el');
+const buttonGo = document.querySelector('.quest__go_quest');
+const mainEl = document.querySelector('.quest__my_element');
+const buttonNext = document.querySelector('.quest__next');
+const questName = document.querySelector('.test__quest_name');
+const finEl = document.querySelector('.quest__finish_el');
 let qIndex = 0;
 
 class Test {
@@ -127,7 +127,9 @@ class Test {
 }
 
 function getQuest(){
+  questName.style.display = "block";
   questName.innerText = quest.name;
+  mainEl.style.display = "block";
   let answerEl = new Test(quest.questions[qIndex].question,quest.questions[qIndex].answers[0],quest.questions[qIndex].answers[1],quest.questions[qIndex].answers[2]);
   answerEl.getAnswer();
   qIndex +=1;
@@ -135,13 +137,13 @@ function getQuest(){
 
 buttonGo.addEventListener('click', () => {
   getQuest();
-  buttonGo.setAttribute('disabled','disabled');
+  buttonGo.style.display = "none";
   buttonNext.removeAttribute('disabled');
 });
 
 buttonNext.addEventListener('click', () => {
   if(qIndex>=8){
-    mainEl.innerHTML = "";
+    mainEl.style.display = "none";
     finEl.style.display = "block";
   }else{
   mainEl.innerHTML = "";

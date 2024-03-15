@@ -11976,40 +11976,90 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-body {
-  font-family: sans-serif;
-}
-
-.finish_el {
-  display: none;
-}
-
-.finish_el > img {
-  width: 40%;
-}
-
-.go_quest {
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
-
-.header_test {
-  margin-bottom: 5%;
-  color: blue;
-}
-
-.header_welcome {
-  color: blue;
-}
-
 .container {
   width: 1000px;
   margin: 0 auto;
   margin-top: 40px;
 }
 
+.test__container {
+  padding-top: 4%;
+  width: 100%;
+  height: 100vh;
+  font-family: sans-serif;
+  background-color: #2D4628;
+  background-image: url(../img/test_back.jpg);
+  background-size: cover;
+}
+.test__header {
+  width: 30rem;
+  margin-bottom: 5%;
+  padding: 2%;
+  background-color: rgba(250, 208, 116, 0.8);
+  border-radius: 5rem;
+  text-align: center;
+  font-size: 5rem;
+  color: #2D4628;
+  font-weight: 800;
+}
+.test__welcome {
+  width: 50rem;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: 3rem;
+  color: #2D4628;
+  background-color: rgba(250, 208, 116, 0.8);
+  border-radius: 3rem;
+  text-align: center;
+}
+.test__quest_name {
+  display: none;
+  width: 31rem;
+  margin-top: 3%;
+  padding: 2% 1.2%;
+  font-size: 2.5rem;
+  color: #E83100;
+  background-color: rgba(250, 208, 116, 0.8);
+  border-radius: 2.5rem;
+  text-align: center;
+}
+
+.quest__go_quest, .quest__go_quest:disabled, .quest__next, .quest__next:disabled, .quest__back, .quest__back:disabled {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background-color: #FAD074;
+  border: none;
+  color: #2D4628;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.quest__go_quest:hover, .quest__next:hover, .quest__back:hover {
+  background-color: #FF6933 !important;
+}
+.quest__finish_el {
+  display: none;
+  background-color: rgba(250, 208, 116, 0.8);
+  border-radius: 5rem;
+}
+.quest__finish_el > img {
+  width: 40%;
+}
+.quest__my_element {
+  display: none;
+  width: 31rem;
+  margin-top: 1%;
+  padding: 2% 1.2%;
+  font-size: 1.5rem;
+  background-color: rgba(250, 208, 116, 0.8);
+  border-radius: 2.5rem;
+}
+
 .inp_container {
   margin-bottom: 2%;
   display: flex;
   flex-direction: column;
+}
+
+.question_element {
+  font-size: 2rem;
 }/*# sourceMappingURL=custom.css.map */
