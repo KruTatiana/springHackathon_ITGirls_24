@@ -1,0 +1,93 @@
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.main-header {
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+
+  & img {
+    width: 128px;
+    height: 61px;
+    margin-right: 50px;
+  }
+
+  & h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+
+  &__box {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  &__box img {
+    width: 20px;
+    margin-right: 10px;
+  }
+
+  &__link {
+    margin-left: auto;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    background-color: #7ecde5;
+    border-radius: 3px;
+  }
+
+  &__link:hover {
+    color: white;
+    background-color: #145b7e;
+  }
+}
+
+.about {
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-bottom: 80px;
+  }
+
+  &__item a {
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 30px;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__item img {
+    width: 350px;
+    height: 277px;
+    margin-bottom: 20px;
+  }
+
+  &__desc {
+    margin: 0;
+    text-align: center;
+    font-size: 24px;
+    color: #145b7e;
+    text-transform: uppercase;
+  }
+}
+
+//Код ТаниК
+.finish_el {
+  display: none;
+  width: 80%;
+}
