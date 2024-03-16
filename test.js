@@ -144,7 +144,8 @@ buttonGo.addEventListener('click', () => {
 buttonNext.addEventListener('click', () => {
   if(qIndex>=8){
     mainEl.style.display = "none";
-    finEl.style.display = "block";
+    finEl.style.display = "flex";
+    buttonNext.setAttribute('disabled','disabled');
   }else{
   mainEl.innerHTML = "";
   getQuest();

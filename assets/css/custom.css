@@ -11978,14 +11978,14 @@ textarea.form-control-lg {
 }
 .container {
   width: 1000px;
-  margin: 0 auto;
-  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .test__container {
-  padding-top: 4%;
   width: 100%;
   height: 100vh;
+  padding-top: 4.5vh;
   font-family: sans-serif;
   background-color: #2D4628;
   background-image: url(../img/test_back.jpg);
@@ -11993,40 +11993,39 @@ textarea.form-control-lg {
 }
 .test__header {
   width: 30rem;
-  margin-bottom: 5%;
+  margin-bottom: 3vh;
   padding: 2%;
   background-color: rgba(250, 208, 116, 0.8);
   border-radius: 5rem;
   text-align: center;
-  font-size: 5rem;
+  font-size: 4rem;
   color: #2D4628;
   font-weight: 800;
 }
 .test__welcome {
-  width: 50rem;
   padding-top: 2%;
   padding-bottom: 2%;
-  font-size: 3rem;
+  padding-left: 5%;
+  font-size: 2.5rem;
   color: #2D4628;
   background-color: rgba(250, 208, 116, 0.8);
   border-radius: 3rem;
-  text-align: center;
 }
 .test__quest_name {
   display: none;
-  width: 31rem;
-  margin-top: 3%;
-  padding: 2% 1.2%;
+  margin-top: 3vh;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 5%;
   font-size: 2.5rem;
   color: #E83100;
   background-color: rgba(250, 208, 116, 0.8);
   border-radius: 2.5rem;
-  text-align: center;
 }
 
-.quest__go_quest, .quest__go_quest:disabled, .quest__next, .quest__next:disabled, .quest__back, .quest__back:disabled {
-  margin-top: 5%;
-  margin-bottom: 5%;
+.quest__go_quest, .quest__go_quest:disabled, .quest__next, .quest__next:disabled, .quest__back {
+  margin-top: 4%;
+  margin-bottom: 5vh;
   background-color: #FAD074;
   border: none;
   color: #2D4628;
@@ -12038,28 +12037,49 @@ textarea.form-control-lg {
 }
 .quest__finish_el {
   display: none;
-  background-color: rgba(250, 208, 116, 0.8);
+  margin-top: 2vh;
+  background-color: rgb(250, 208, 116);
   border-radius: 5rem;
 }
 .quest__finish_el > img {
-  width: 40%;
+  width: 50%;
+  border-top-left-radius: 5rem;
+  border-bottom-left-radius: 5rem;
+}
+.quest__finish_el > p {
+  min-height: 100%;
+  margin: 0;
+  align-self: center;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #E83100;
 }
 .quest__my_element {
   display: none;
-  width: 31rem;
   margin-top: 1%;
-  padding: 2% 1.2%;
+  padding-top: 2%;
+  padding-left: 5%;
+  padding-bottom: 2%;
   font-size: 1.5rem;
+  color: #2D4628;
   background-color: rgba(250, 208, 116, 0.8);
   border-radius: 2.5rem;
 }
 
 .inp_container {
   margin-bottom: 2%;
+  padding-left: 2%;
   display: flex;
   flex-direction: column;
 }
 
 .question_element {
   font-size: 2rem;
+}
+
+#answerFirst, #answerSecond, #answerThird {
+  width: 16px;
+  height: 16px;
+  margin-right: 1%;
 }/*# sourceMappingURL=custom.css.map */
