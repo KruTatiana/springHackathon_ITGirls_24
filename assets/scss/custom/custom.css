@@ -11975,4 +11975,111 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+.container {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.test__container {
+  width: 100%;
+  height: 100vh;
+  padding-top: 4.5vh;
+  font-family: sans-serif;
+  background-color: #2D4628;
+  background-image: url("../../img/test_back.jpg");
+  background-size: cover;
+}
+.test__header {
+  width: 30rem;
+  margin-bottom: 3vh;
+  padding: 2%;
+  background-color: rgba(250, 208, 116, 0.8);
+  border-radius: 5rem;
+  text-align: center;
+  font-size: 4rem;
+  color: #2D4628;
+  font-weight: 800;
+}
+.test__welcome {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 5%;
+  font-size: 2.5rem;
+  color: #2D4628;
+  background-color: rgba(250, 208, 116, 0.8);
+  border-radius: 3rem;
+}
+.test__quest_name {
+  display: none;
+  margin-top: 3vh;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 5%;
+  font-size: 2.5rem;
+  color: #E83100;
+  background-color: rgba(250, 208, 116, 0.8);
+  border-radius: 2.5rem;
+}
+
+.quest__go_quest, .quest__go_quest:disabled, .quest__next, .quest__next:disabled, .quest__back {
+  margin-top: 4%;
+  margin-bottom: 5vh;
+  background-color: #FAD074;
+  border: none;
+  color: #2D4628;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.quest__go_quest:hover, .quest__next:hover, .quest__back:hover {
+  background-color: #FF6933 !important;
+}
+.quest__finish_el {
+  display: none;
+  margin-top: 2vh;
+  background-color: rgb(250, 208, 116);
+  border-radius: 5rem;
+}
+.quest__finish_el > img {
+  width: 50%;
+  border-top-left-radius: 5rem;
+  border-bottom-left-radius: 5rem;
+}
+.quest__finish_el > p {
+  min-height: 100%;
+  margin: 0;
+  align-self: center;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #E83100;
+}
+.quest__my_element {
+  display: none;
+  margin-top: 1%;
+  padding-top: 2%;
+  padding-left: 5%;
+  padding-bottom: 2%;
+  font-size: 1.5rem;
+  color: #2D4628;
+  background-color: rgba(250, 208, 116, 0.8);
+  border-radius: 2.5rem;
+}
+
+.inp_container {
+  margin-bottom: 2%;
+  padding-left: 2%;
+  display: flex;
+  flex-direction: column;
+}
+
+.question_element {
+  font-size: 2rem;
+}
+
+#answerFirst, #answerSecond, #answerThird {
+  width: 16px;
+  height: 16px;
+  margin-right: 1%;
 }/*# sourceMappingURL=custom.css.map */

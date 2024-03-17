@@ -3,25 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/custom.css" />
+    <link rel="stylesheet" href="./assets/scss/custom/custom.css" />
     <title>Document</title>
   </head>
-  <body class="container">
-    <header>
-      <h3 class="header_test">Тест дня</h3>
-      <h4 class="header_welcome">Ответь на 8 весёлых вопросов</h4>
-      <h4 class="quest_name"></h4>
-    </header>
-    <main class="container">
-      <button class="go_quest btn btn-info">Вперёд</button>
-      <div class="my_element"></div>
-      <div class="finish_el">
-        <img src="./assets/img/test.jpg" />
-        <p>Ты самый вкусный пельмешек!</p>
+  <body>
+    <div class="test__container">
+      <div class="container">
+        <header>
+          <h3 class="test__header">Тест дня</h3>
+          <h4 class="test__welcome w-75">Ответь на 8 весёлых вопросов</h4>
+          <h4 class="test__quest_name w-75"></h4>
+        </header>
+        <main>
+          <button class="quest__go_quest btn">Вперёд</button>
+          <div class="quest__my_element w-75"></div>
+          <div class="quest__finish_el w-75">
+            <img src="./assets/img/test.jpg" />
+            <p>Ты самый вкусный пельмешек!</p>
+          </div>
+          <button class="quest__next btn" disabled>Дальше</button>
+          <a class="quest__back btn" href="./index.html">Назад</a>
+        </main>
+        <footer></footer>
       </div>
-      <button class="next btn btn-info" disabled>Дальше</button>
-    </main>
-    <footer></footer>
+    </div>
     <script src="./assets/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="./test.js"></script>
   </body>
